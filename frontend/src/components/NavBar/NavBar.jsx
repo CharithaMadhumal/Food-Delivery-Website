@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
 import './NavBar.css'
-import search_icon from '../../assets/search_icon.png';
 import basket  from '../../assets/basket.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { assets } from '../../assets/assets';
@@ -31,7 +30,7 @@ const NavBar = ({setShowLogin}) => {
 
         </ul>
         <div className='navbar-right'>
-            <img src={search_icon} alt='' className='search' />
+            
             <div className='navbar-search-icon'>
                <Link to={'/cart'}> <img src={basket} alt='' className='basket'/></Link>
                 <div className={getTotalCartAmount()===0?"":"dot"}></div>
